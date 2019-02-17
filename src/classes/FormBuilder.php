@@ -12,6 +12,13 @@ class FormBuilder
 	private $form_tag = '';
 	private $html = '';
 
+	public function label($tags=null){
+
+		$this->html.= FormSnippets::generate_snippet($tags, 'div');
+		$this->open_tag_track = 'label';
+
+		return $this;
+	}
 
 	public function div($tags=null){
 
