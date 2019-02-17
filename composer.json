@@ -1,0 +1,13 @@
+{
+    "name": "nimdevelopment/formbuilder",
+    "description": "Php form precompiler",
+    "type": "libbrary",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"NimDevelopment\\FormBuilder\\": "src/"
+    	}
+    }
+}
