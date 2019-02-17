@@ -88,8 +88,7 @@ class FormBuilder
 	}
 
 
-
-	// Forms
+	// Form handling
 	public function open_form($args=null){
 		if(is_array($args)){
 			$this->form_tag.= FormSnippets::generate_snippet($args, 'form');
@@ -105,9 +104,7 @@ class FormBuilder
 	}
 	//
 
-
-
-	//Functions called in blade snippet
+	//Functions called in blade include
 	public function insert_form(){
 		return $this->form_tag;
 	}
@@ -129,11 +126,6 @@ class FormBuilder
 		return $this;
 	}
 	//
-
-
-	public function test(){
-		return $this->html;
-	}
 }
 
 ?>
